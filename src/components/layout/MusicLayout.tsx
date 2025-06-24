@@ -18,19 +18,19 @@ const MusicLayout: React.FC<MusicLayoutProps> = ({ className }) => {
       )}
     >
       {/* Main Layout */}
-      <div className="flex flex-1 h-screen overflow-hidden">
+      <div className="flex flex-1 h-[calc(100vh-112px)] overflow-hidden">
         {/* Left Sidebar */}
-        <LeftSidebar />
+        <LeftSidebar className="hidden lg:flex" />
 
         {/* Main Content */}
         <MainContent className="flex-1 overflow-y-auto" />
 
         {/* Right Sidebar */}
-        <RightSidebar />
+        <RightSidebar className="hidden xl:flex" />
       </div>
 
       {/* Music Player */}
-      <MusicPlayer className="fixed bottom-0 left-0 right-0 z-50" />
+      <MusicPlayer className="mt-auto" />
     </div>
   );
 };
