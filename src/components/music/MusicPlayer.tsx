@@ -23,7 +23,7 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ className }) => {
   return (
     <div
       className={cn(
-        "w-full h-28 bg-beatbay-black/64 backdrop-blur-[37px] border-t border-beatbay-active-dark/20",
+        "w-full h-28 bg-beatbay-black/64 backdrop-blur-[37px] border-t border-beatbay-active-dark/20 relative",
         className,
       )}
     >
