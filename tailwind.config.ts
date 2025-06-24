@@ -18,7 +18,25 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        manrope: [
+          "Manrope",
+          "-apple-system",
+          "Roboto",
+          "Helvetica",
+          "sans-serif",
+        ],
+      },
       colors: {
+        // BeatBay custom colors
+        "beatbay-black": "#121212",
+        "beatbay-gray": "#212121",
+        "beatbay-green": "#1DB954",
+        "beatbay-light-gray": "#949494",
+        "beatbay-hover-gray": "#7F7F7F",
+        "beatbay-active-gray": "#D2D2D2",
+        "beatbay-active-dark": "#656565",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
