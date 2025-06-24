@@ -43,7 +43,7 @@ const MainContent: React.FC<MainContentProps> = ({ className }) => {
   ];
 
   return (
-    <div className={cn("flex-1 px-8 py-8 space-y-8", className)}>
+    <div className={cn("flex-1 px-4 lg:px-8 py-8 space-y-8", className)}>
       {/* Top Navigation */}
       <TopNavigation />
 
@@ -60,7 +60,7 @@ const MainContent: React.FC<MainContentProps> = ({ className }) => {
             See All
           </span>
         </div>
-        <div className="flex gap-5 overflow-x-auto pb-2">
+        <div className="flex gap-5 overflow-x-auto pb-2 scrollbar-hide">
           {popularReleases.map((album, index) => (
             <AlbumCard
               key={index}
